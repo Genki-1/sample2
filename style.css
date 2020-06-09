@@ -38,6 +38,15 @@ header h1 {
 .description img {
   float: left;
   margin: 0 10px 10px 0;
+
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.description img:hover {
+  opacity: .5;
 }
 
 .information h1 {
@@ -101,7 +110,7 @@ footer {
   padding: 5px;
 }
 
-@media only screen and (max-width: 600px;) {
+@media only screen and (max-width: 600px) {
   .description img {
     float: none;
     margin: 0 auto;
